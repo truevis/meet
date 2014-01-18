@@ -5,7 +5,7 @@ Framework for instant conference meets with locations and user responses. It dem
 
 It is a fork of Meteor's Party App example https://github.com/meteor/meteor/tree/devel/examples/parties
 
-This can be the basis of a new open source project.
+This can be the basis of a new open-source project.
 
 Future possible enhancements:
 
