@@ -1,0 +1,57 @@
+Searching 9 files for "details"
+
+/home/daddy/meteor/parties/client/client.js:
+   19  
+   20  ///////////////////////////////////////////////////////////////////////////////
+   21: // Party details sidebar
+   22  
+   23: Template.details.party = function () {
+   24    return Parties.findOne(Session.get("selected"));
+   25  };
+   26  
+   27: Template.details.anyParties = function () {
+   28    return Parties.find().count() > 0;
+   29  };
+   30  
+   31: Template.details.creatorName = function () {
+   32    var owner = Meteor.users.findOne(this.owner);
+   33    if (owner._id === Meteor.userId())
+   ..
+   36  };
+   37  
+   38: Template.details.canRemove = function () {
+   39    return this.owner === Meteor.userId() && attending(this) === 0;
+   40  };
+   41  
+   42: Template.details.maybeChosen = function (what) {
+   43    var myRsvp = _.find(this.rsvps, function (r) {
+   44      return r.user === Meteor.userId();
+   ..
+   48  };
+   49  
+   50: Template.details.events({
+   51    'click .rsvp_yes': function () {
+   52      Meteor.call("rsvp", Session.get("selected"), "yes");
+
+/home/daddy/meteor/parties/client/parties.css:
+    3  }
+    4  
+    5: .details {
+    6      margin-top: 0px;
+    7  }
+
+/home/daddy/meteor/parties/client/parties.html:
+   44            </div>
+   45            <div class="span4">
+   46:             {{> details}}
+   47            </div>
+   48          </div>
+   ..
+   71  </template>
+   72  
+   73: <template name="details">
+   74:   <div class="details">
+   75      {{#if party}}
+   76        {{#with party}}
+
+11 matches across 3 files
