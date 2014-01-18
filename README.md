@@ -19,3 +19,4 @@ Future possible enhancements:
 * Calendar / time integration
 * Changeable background maps
 * Display warning if not JavaScript not on
+* Add more mobile features like geolocation, wayfinding, and notifications
