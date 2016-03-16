@@ -1,6 +1,8 @@
 meet
 ====
 
+See http://truevis.com/meet
+
 Real-time app for instant conference meets with locations and user responses. It demonstrates the principle of using a modern, instantly updating framework for helping to organize meetings and conferences.
 
 It was based on Meteor's "parties" example.
