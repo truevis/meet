@@ -1,7 +1,7 @@
 meet
 ====
 
-Framework for instant conference meets with locations and user responses. It demonstrates the principle of using a modern, instantly updating framework for helping to organize meetings and conferences.
+Real-time app for instant conference meets with locations and user responses. It demonstrates the principle of using a modern, instantly updating framework for helping to organize meetings and conferences.
 
 It is a fork of Meteor's "parties" example https://github.com/meteor/meteor/tree/devel/examples/parties
 
